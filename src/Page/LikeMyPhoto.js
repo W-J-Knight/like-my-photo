@@ -27,8 +27,9 @@ function LikeMyPhoto() {
       <Title text={"Like My Photo App"} />
       <Title classes={"text-center subtitle "} text={`Likes ${count}`} />
       <div
-        className="card card-dark m-auto"
+        className="card card-dark m-auto shadow-sm"
         style={{ width: "300px", cursor: "pointer" }}
+        onDoubleClick={toggleLike}
       >
         <div className="card-header fs-xl">
           <AiFillSmile className="mr-2" />
